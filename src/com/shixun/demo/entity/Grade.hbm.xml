@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-3-31 11:57:39 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.shixun.demo.entity.Grade" table="GRADE">
+        <id name="gradeID" type="java.lang.Integer">
+            <column name="GRADEID" />
+            <generator class="increment" />
+        </id>
+        <property name="gradeName" type="java.lang.String">
+            <column name="GRADENAME" />
+        </property>
+        <set name="students" table="STUDENT" inverse="true" cascade="all" order-by="id asc" lazy="extra">
+            <key>
+                <column name="GRADEID" />
+            </key>
+            <one-to-many class="com.shixun.demo.entity.Student" />
+        </set>
+    </class>
+</hibernate-mapping>

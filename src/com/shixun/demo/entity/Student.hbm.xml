@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-3-31 12:05:33 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.shixun.demo.entity.Student" table="STUDENT">
+        <id name="stuNo" type="java.lang.Integer" >
+            <column name="STUNO" />
+            <generator class="increment" />
+        </id>
+        <property name="uID"  type="java.lang.Integer">
+            <column name="UID" />
+        </property>
+        <property name="stuName" type="java.lang.String">
+            <column name="STUNAME" />
+        </property>
+        <property name="stuSex" type="java.lang.String">
+            <column name="STUSEX" />
+        </property>
+        <property name="stuDate" type="java.util.Date">
+            <column name="STUDATE" />
+        </property>
+        <property name="stuEmail" type="java.lang.String">
+            <column name="STUEMAIL" />
+        </property>
+        <property name="stuPhone" type="java.lang.String">
+            <column name="STUPHONE" />
+        </property>
+        <property name="stuAddress" type="java.lang.String">
+            <column name="STUADDRESS" />
+        </property>
+        <property name="gradeID" type="java.lang.Integer" insert="false" update="false">
+            <column name="GRADEID" />
+        </property>
+        <many-to-one name="grade" class="com.shixun.demo.entity.Grade" fetch="join">
+            <column name="GRADEID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

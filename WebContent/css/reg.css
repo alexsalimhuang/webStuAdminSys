@@ -1,0 +1,181 @@
+body {
+	text-align: center;
+}
+
+.alert{
+	padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+	border-radius: 3px;
+}
+
+.alert-danger{
+	background-color: #dd4b39 !important;
+	color: #fff !important;
+	border-color: #d73925;
+}
+
+.alert-dismissable, .alert-dismissible {
+    padding-right: 30px;
+}
+
+
+#formbackground {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	left: 0;
+	top: 0;
+}
+
+#div1 {
+	width: 435px;
+	height: 384px;
+	position: relative;
+	background-image: url(../img/loginUI.jpg);
+	z-index: 1;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+#div2 {
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	left: 153px;
+	top: 130px;
+}
+
+#form1 {
+	height: 300px;
+	text-align: left;
+}
+
+#div3 {
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	left: 153px;
+	top: 167px;
+}
+
+#div4 {
+	height: 34px;
+	width: 360px;
+	position: absolute;
+	left: 50px;
+	top: 210px;
+}
+
+#waiting{
+	width: 374px;
+	height: 145px;
+	display: none;
+	position: absolute;
+	left: -10px;
+	top: 265px;
+	background-image: url(../img/waiting.png);
+}
+
+#waiting span{
+	width:20px;
+	height: 15px;
+	line-height: 15px;
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 118px;
+	color: greenyellow;
+}
+
+#tipBody{
+	height:301px;
+	border:0px;
+	background:transparent; 
+	background-image:url(../img/tipNotMemember1.png) ;
+}
+
+#tipNotFound .modal-footer,#register .modal-footer{
+	border:0px;
+}
+
+#registernowButton{
+	width:315px;
+	height:85px;
+	background: transparent;
+	position: absolute;
+	margin-top:105px ;
+	margin-left: 140px;
+}
+
+#register .modal-dialog{
+	width:454px;
+}
+
+#register .modal-content{
+	width:454px;
+	height: 580px;
+	border:0px;
+	background:transparent; 
+	background-image:url(../img/register1.png) ;
+}
+
+#div5 {
+	width: 182px;
+	height: 30px;
+	position: absolute;
+	left: 136px;
+	top: 101px;
+}
+
+#div5info {
+
+	position: absolute;
+	width: 180px;
+	height: 60px;
+	left: 182px;
+	top: 0px;
+}
+
+#div5info h6{
+	text-align:left;
+	padding-left:15px;
+	margin-bottom:5px;
+}
+
+#div6 {
+	width: 182px;
+	height: 30px;
+	position: absolute;
+	left: 136px;
+	top: 181px;
+}
+
+#div7 {
+	width: 182px;
+	height: 30px;
+	position: absolute;
+	left: 136px;
+	top: 260px;
+}
+
+#div8 {
+	width: 182px;
+	height: 30px;
+	position: absolute;
+	left: 136px;
+	top: 339px;
+}
+
+#registerButton{
+	width:239px;
+	height:64px;
+	background: transparent;
+	position: absolute;
+	margin-top:435px ;
+	margin-left: 108px;
+
+}
+
